@@ -36,4 +36,17 @@ In the first weekly meeting, we examined the motor specifications and reviewing 
 \label{fig:1}
 \end{figure}
 
+
+\subsection*{Thyristor or Diode?}
+To choose the most convenient topology, we compared the advantages and disadvantages of the single phase thyristor rectifier, three phase thyristor rectifier and diode rectifier with buck converter topologies. The results are as follows:
+
+\begin{itemize}
+\item Gate driving circuit of a thyristor rectifier is quite hard to implement. Even in the lab experiments, we are not able to set the firing angles precisely. With, diode rectifiers, we will not encounter such a problem.
+\item For a three-phase rectifier, 6 thyristors; for a single-phase, 4 thyristors are needed. Considering that for all of these thyristors, there will also be gate driving elements, we will end up with too many number of components, which will cause problems because of debugging, controlling and financial concerns.
+\item Thyristor rectifiers work at lower frequency, which causes large ripple.
+\item Diode rectifier with buck converter is easier to implement, more affordable and provides more reliable output.
+\item As buck converter works at higher frequency, ripple will be quite smaller.
+
+\end{itemize}
+
 \end{document}
