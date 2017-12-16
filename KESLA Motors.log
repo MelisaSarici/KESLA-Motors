@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.8.25)  16 DEC 2017 17:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.8.25)  16 DEC 2017 17:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -520,31 +520,27 @@ e 14.
 <char.jpeg, id=8, 422.32782pt x 130.98938pt>
 File: char.jpeg Graphic file (type jpg)
 <use char.jpeg>
-Package pdftex.def Info: char.jpeg  used on input line 29. on input line 29.
-Package pdftex.def Info: Requested size: 422.32678pt x 130.98904pt on input lin
-e 29.
-
-Overfull \hbox (77.32678pt too wide) in paragraph at lines 29--30
-[][] 
- []
-
-[1 <./char.jpeg>] (./KESLA Motors.aux) ) 
+Package pdftex.def Info: char.jpeg  used on input line 34. on input line 34.
+Package pdftex.def Info: Requested size: 295.62746pt x 91.69193pt on input line
+ 34.
+ [1 <./char.jpeg>] (./KESLA Motors.aux) ) 
 Here is how much of TeX's memory you used:
- 2340 strings out of 492990
- 29652 string characters out of 6136334
- 89013 words of memory out of 5000000
- 5882 multiletter control sequences out of 15000+600000
- 4544 words of font info for 17 fonts, out of 8000000 for 9000
+ 2346 strings out of 492990
+ 29722 string characters out of 6136334
+ 90013 words of memory out of 5000000
+ 5887 multiletter control sequences out of 15000+600000
+ 5603 words of font info for 21 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,25p,489b,217s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2017/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr17.pfb>
-Output written on "KESLA Motors.pdf" (2 pages, 101158 bytes).
+ 41i,6n,25p,1065b,217s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2017/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmmi10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi7.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
+fb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on "KESLA Motors.pdf" (2 pages, 118876 bytes).
 PDF statistics:
- 25 PDF objects out of 1000 (max. 8388607)
- 15 compressed objects within 1 object stream
+ 33 PDF objects out of 1000 (max. 8388607)
+ 21 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
