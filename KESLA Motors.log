@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.8.25)  16 DEC 2017 17:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.8.25)  16 DEC 2017 21:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -508,39 +508,52 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-<Logo.PNG, id=1, 297.11pt x 386.44376pt>
-File: Logo.PNG Graphic file (type png)
-<use Logo.PNG>
-Package pdftex.def Info: Logo.PNG  used on input line 14. on input line 14.
-Package pdftex.def Info: Requested size: 237.68831pt x 309.15543pt on input lin
+<kesla.PNG, id=1, 529.98pt x 393.8715pt>
+File: kesla.PNG Graphic file (type png)
+<use kesla.PNG>
+Package pdftex.def Info: kesla.PNG  used on input line 14. on input line 14.
+Package pdftex.def Info: Requested size: 423.98456pt x 315.09761pt on input lin
 e 14.
- [1
 
-{c:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Logo.PNG>]
-<char.jpeg, id=8, 422.32782pt x 130.98938pt>
+Overfull \hbox (78.98456pt too wide) in paragraph at lines 14--14
+ [][] 
+ []
+
+[1
+
+{c:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./kesla.PNG>]
+<char.jpeg, id=10, 422.32782pt x 130.98938pt>
 File: char.jpeg Graphic file (type jpg)
 <use char.jpeg>
 Package pdftex.def Info: char.jpeg  used on input line 34. on input line 34.
 Package pdftex.def Info: Requested size: 295.62746pt x 91.69193pt on input line
  34.
- [1 <./char.jpeg>] (./KESLA Motors.aux) ) 
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 44.
+(c:/texlive/2017/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 44.
+ [1 <./char.jpeg>]
+[2] (./KESLA Motors.aux) ) 
 Here is how much of TeX's memory you used:
- 2346 strings out of 492990
- 29722 string characters out of 6136334
- 90013 words of memory out of 5000000
- 5887 multiletter control sequences out of 15000+600000
+ 2362 strings out of 492990
+ 30005 string characters out of 6136334
+ 93013 words of memory out of 5000000
+ 5900 multiletter control sequences out of 15000+600000
  5603 words of font info for 21 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,6n,25p,1065b,217s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2017/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmmi10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi7.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
-fb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on "KESLA Motors.pdf" (2 pages, 118876 bytes).
+<c:/texlive/2017/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c
+:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/
+2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2017/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "KESLA Motors.pdf" (3 pages, 123590 bytes).
 PDF statistics:
- 33 PDF objects out of 1000 (max. 8388607)
- 21 compressed objects within 1 object stream
+ 42 PDF objects out of 1000 (max. 8388607)
+ 27 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
