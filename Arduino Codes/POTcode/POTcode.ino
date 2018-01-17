@@ -1,81 +1,61 @@
 
 
-// Frequency modes for TIMER4
-#define PWM187k 1   // 187500 Hz
-#define PWM94k  2   //  93750 Hz
-#define PWM47k  3   //  46875 Hz
-#define PWM23k  4   //  23437 Hz
-#define PWM12k  5   //  11719 Hz
-#define PWM6k   6   //   5859 Hz
-#define PWM3k   7   //   2930 Hz
-
-// Direct PWM change variables
-#define PWM6        OCR4D
-#define PWM13       OCR4A
-
-// Terminal count
-#define PWM6_13_MAX OCR4C
-
 int POT = A0;
+int PWM =6;
+float Duty=0;
+float D=0;
       
-//      int D=0;
-//      float I;
-//      float V;
-//      float P;
-//      float Pmax=0;
-//      float Dmax=1;
-//      unsigned long start=100;
-
-        // Configure the PWM clock
-        // The argument is one of the 7 previously defined modes
-        void pwm613configure(int mode)
-        {
-        // TCCR4A configuration
-        TCCR4A=0;
-        // TCCR4B configuration
-        TCCR4B=mode;
-        // TCCR4C configuration
-        TCCR4C=0;
-        // TCCR4D configuration
-        TCCR4D=0;
-        // TCCR4D configuration
-        TCCR4D=0;
-        // PLL Configuration
-        // Use 96MHz / 2 = 48MHz
-        PLLFRQ=(PLLFRQ&0xCF)|0x30;
-        // PLLFRQ=(PLLFRQ&0xCF)|0x10; // Will double all frequencies
-        // Terminal count for Timer 4 PWM
-        OCR4C=255;
-        }
-
-        // Set PWM to D6 (Timer4 D)
-        // Argument is PWM between 0 and 255
-        void pwmSet6(int value)
-        {
-        OCR4D=value;   // Set PWM value
-        DDRD|=1<<7;    // Set Output Mode D7
-        TCCR4C|=0x09;  // Activate channel D
-        }
-
-       
+  
 void setup() {
   Serial.begin(9600);
-   pwm613configure(PWM12k);
-
+  pinMode(PWM,OUTPUT);
   pinMode(POT,INPUT);
-  
- 
+  setPwmFrequency(6, 8); //Sets the pwm output of 6 to around 8 to 9 kHz
 }
 
-void loop() {  
-        
-               
-              
-                D=analogRead(POT);
-                pwmSet6(D);
-               
-                delay(20);
-                               
+void setPwmFrequency(int pin, int divisor) {
+  byte mode;
+  if(pin == 5 || pin == 6 || pin == 9 || pin == 10) {
+    switch(divisor) {
+      case 1: mode = 0x01; break;
+      case 8: mode = 0x02; break;
+      case 64: mode = 0x03; break;
+      case 256: mode = 0x04; break;
+      case 1024: mode = 0x05; break;
+      default: return;
+    }
+    if(pin == 5 || pin == 6) {
+      TCCR0B = TCCR0B & 0b11111000 | mode;
+    } else {
+      TCCR1B = TCCR1B & 0b11111000 | mode;
+    }
+  } else if(pin == 3 || pin == 11) {
+    switch(divisor) {
+      case 1: mode = 0x01; break;
+      case 8: mode = 0x02; break;
+      case 32: mode = 0x03; break;
+      case 64: mode = 0x04; break;
+      case 128: mode = 0x05; break;
+      case 256: mode = 0x06; break;
+      case 1024: mode = 0x07; break;
+      default: return;
+    }
+    TCCR2B = TCCR2B & 0b11111000 | mode;
+  }
+}
+
+void loop() {                
+                D=analogRead(POT); 
+                 
+                  if (D<70){
+                    D=0;
+                    Serial.print("********");
+                    }       
+                    Duty=D/1024*255; 
+                analogWrite(PWM,Duty);
+                delay(2000);
+                Serial.print("The duty cycle is:");
+                Serial.println(D) ;  
               
         }
        
