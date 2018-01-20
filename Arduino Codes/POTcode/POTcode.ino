@@ -47,7 +47,7 @@ void setPwmFrequency(int pin, int divisor) {
 void loop() {                
                 D=analogRead(POT); 
                  
-                  if (D<70){
+                  if (D<10){
                     D=0;
                     Serial.print("********");
                     }       
